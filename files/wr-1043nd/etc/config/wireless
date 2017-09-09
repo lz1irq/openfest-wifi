@@ -3,7 +3,7 @@ config wifi-device  radio0
 	option hwmode	11g
 	option path	'platform/qca955x_wmac'
 #	option channel <radio1-channel>
-#	option txpower '20'
+	option txpower '20'
 	option htmode 'HT20'
 	option distance '20'
 	list basic_rate '54000'
