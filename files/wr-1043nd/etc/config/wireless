@@ -6,7 +6,6 @@ config wifi-device  radio0
 	option txpower '20'
 	option htmode 'HT20'
 	option distance '20'
-	list basic_rate '54000'
 	option require_mode 'g'
 	option beacon_int 250
 	option log_level '-1'
