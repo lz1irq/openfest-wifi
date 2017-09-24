@@ -1,14 +1,28 @@
 ---
 configurations:
   ap-cf-sr-2:
-    config: archer-c5
+    config: archer-c7
     ip: 10.20.0.57
     wlans:
       0:
-        bssid: 18:d6:c7:fc:ed:37
+        bssid: 02:00:0f:20:16:00
         channel: 60
       1:
-        bssid: 18:d6:c7:fc:ed:38
+        bssid: 02:00:0f:20:16:01
+        channel: 1
+    mixins:
+      - all
+      - archer-c5
+      - archer-c5-single-trunk
+  ap-cf-ch:
+    config: archer-c5
+    ip: 10.20.0.58
+    wlans:
+      0:
+        bssid: 02:00:0f:20:16:10
+        channel: 44
+      1:
+        bssid: 02:00:0f:20:16:11
         channel: 1
     mixins:
       - all
