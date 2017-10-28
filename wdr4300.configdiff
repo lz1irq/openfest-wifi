@@ -107,6 +107,6 @@ CONFIG_VERSION_MANUFACTURER=""
 CONFIG_VERSION_NICK="Chaos Calmer"
 CONFIG_VERSION_NUMBER="15.05"
 CONFIG_VERSION_PRODUCT=""
-CONFIG_VERSION_REPO="http://downloads.openwrt.org/%n/%v/%S/packages"
+CONFIG_VERSION_REPO="https://mirrors.linux-bulgaria.org/lede/releases/17.01.4"
 CONFIG_WPA_SUPPLICANT_INTERNAL=y
 # CONFIG_IB_STANDALONE is not set
