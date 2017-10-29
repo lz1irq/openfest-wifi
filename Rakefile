@@ -56,7 +56,8 @@ task :ap, [:name] do |t, args|
 end
 
 task :all do
-  aps = %W(ap-cf-mr-1 ap-cf-mr-2 ap-cf-mr-3 ap-cf-mr-4) # Main room
+  aps = %W(ap-cf-f-l ap-cf-f-r) # Foaier
+  aps += %W(ap-cf-mr-1 ap-cf-mr-2 ap-cf-mr-3 ap-cf-mr-4) # Main room
   aps += %W(ap-cf-sr-1 ap-cf-sr-2 ) # Small room
   aps += %W(ap-cf-ch) # Chillout and quiet workshop area
 

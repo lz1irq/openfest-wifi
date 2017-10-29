@@ -1,5 +1,35 @@
 ---
 configurations:
+  # Foaier
+  ap-cf-f-r:
+    config: archer-c5
+    ip: 10.20.0.51
+    wlans:
+      0:
+        bssid: 02:00:0f:20:10:00
+        channel: 60
+      1:
+        bssid: 02:00:0f:20:10:01
+        channel: 5
+    mixins:
+      - all
+      - archer-c5
+      - archer-c5-single-trunk
+  ap-cf-f-l:
+    config: archer-c7
+    ip: 10.20.0.51
+    wlans:
+      0:
+        bssid: 02:00:0f:20:10:10
+        channel: 108
+      1:
+        bssid: 02:00:0f:20:10:11
+        channel: 13
+    mixins:
+      - all
+      - archer-c7
+      - archer-c7-single-trunk
+  # Main room
   ap-cf-mr-1:
     config: dap2965
     ip: 10.20.0.52
@@ -56,7 +86,7 @@ configurations:
       - all
       - dap2965
       - dap2965-single-trunk
-
+  # Small room
   ap-cf-sr-1:
     config: archer-c5
     ip: 10.20.0.56
@@ -85,15 +115,16 @@ configurations:
       - all
       - archer-c5
       - archer-c5-single-trunk
+  # Chillout area and quiet workshops
   ap-cf-ch:
     config: archer-c5
     ip: 10.20.0.58
     wlans:
       0:
-        bssid: 02:00:0f:20:30:01
+        bssid: 02:00:0f:20:40:01
         channel: 44
       1:
-        bssid: 02:00:0f:20:30:11
+        bssid: 02:00:0f:20:40:11
         channel: 1
     mixins:
       - all
