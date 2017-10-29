@@ -59,7 +59,7 @@ configurations:
       - dap2965
       - dap2965-single-trunk
   ap-cf-mr-3:
-    config: dap2965
+    config: linksys
     ip: 10.20.0.54
     wlans:
       0:
@@ -70,8 +70,8 @@ configurations:
         channel: 9
     mixins:
       - all
-      - dap2965
-      - dap2965-single-trunk
+      - linksys
+      - linksys-single-trunk
   ap-cf-mr-4:
     config: dap2965
     ip: 10.20.0.55
@@ -84,8 +84,8 @@ configurations:
         channel: 13
     mixins:
       - all
-      - dap2965
-      - dap2965-single-trunk
+      - linksys
+      - linksys-single-trunk
   # Small room
   ap-cf-sr-1:
     config: archer-c5
