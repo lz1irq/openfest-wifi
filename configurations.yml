@@ -130,3 +130,47 @@ configurations:
       - all
       - archer-c5
       - archer-c5-single-trunk
+  # Workshops and overflow
+  ap-ws-ws1:
+    config: linksys
+    ip: 10.20.0.60
+    wlans:
+      0:
+        bssid: 02:00:0f:20:50:00
+        channel: 44
+      1:
+        bssid: 02:00:0f:20:50:01
+        channel: 9
+    mixins:
+      - all
+      - linksys
+      - linksys-single-trunk
+  ap-ws-ws2:
+    config: archer-c5
+    ip: 10.20.0.61
+    wlans:
+      0:
+        bssid: 02:00:0f:20:50:10
+        channel: 108
+      1:
+        bssid: 02:00:0f:20:50:11
+        channel: 1
+    mixins:
+      - all
+      - archer-c5
+      - archer-c5-single-trunk
+  # NOC/Team room
+  ap-ws-noc:
+    config: archer-c5
+    ip: 10.20.0.62
+    wlans:
+      0:
+        bssid: 02:00:0f:20:50:20
+        channel: 108
+      1:
+        bssid: 02:00:0f:20:50:21
+        channel: 13
+    mixins:
+      - all
+      - archer-c5
+      - archer-c5-single-trunk
