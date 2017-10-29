@@ -1,5 +1,62 @@
 ---
 configurations:
+  ap-cf-mr-1:
+    config: dap2965
+    ip: 10.20.0.52
+    wlans:
+      0:
+        bssid: 02:00:0f:20:20:00
+        channel: 124
+      1:
+        bssid: 02:00:0f:20:20:01
+        channel: 5
+    mixins:
+      - all
+      - dap2965
+      - dap2965-single-trunk
+  ap-cf-mr-2:
+    config: dap2965
+    ip: 10.20.0.53
+    wlans:
+      0:
+        bssid: 02:00:0f:20:20:10
+        channel: 44
+      1:
+        bssid: 02:00:0f:20:20:11
+        channel: 1
+    mixins:
+      - all
+      - dap2965
+      - dap2965-single-trunk
+  ap-cf-mr-3:
+    config: dap2965
+    ip: 10.20.0.54
+    wlans:
+      0:
+        bssid: 02:00:0f:20:20:20
+        channel: 108
+      1:
+        bssid: 02:00:0f:20:20:21
+        channel: 9
+    mixins:
+      - all
+      - dap2965
+      - dap2965-single-trunk
+  ap-cf-mr-4:
+    config: dap2965
+    ip: 10.20.0.55
+    wlans:
+      0:
+        bssid: 02:00:0f:20:20:30
+        channel: 60
+      1:
+        bssid: 02:00:0f:20:20:31
+        channel: 13
+    mixins:
+      - all
+      - dap2965
+      - dap2965-single-trunk
+
   ap-cf-sr-1:
     config: archer-c5
     ip: 10.20.0.56
