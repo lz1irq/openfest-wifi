@@ -27,8 +27,8 @@ configurations:
         channel: 13
     mixins:
       - all
-      - archer-c7
-      - archer-c7-single-trunk
+      - archer-c5
+      - archer-c5-single-trunk
   # Main room
   ap-cf-mr-1:
     config: dap2965
