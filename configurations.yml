@@ -121,7 +121,21 @@ configurations:
     ip: 10.20.0.58
     wlans:
       0:
+        bssid: 02:00:0f:20:40:00
+        channel: 44
+      1:
         bssid: 02:00:0f:20:40:01
+        channel: 1
+    mixins:
+      - all
+      - archer-c5
+      - archer-c5-single-trunk
+  ap-cf-qws:
+    config: archer-c5
+    ip: 10.20.0.59
+    wlans:
+      0:
+        bssid: 02:00:0f:20:40:10
         channel: 44
       1:
         bssid: 02:00:0f:20:40:11
