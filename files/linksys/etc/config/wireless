@@ -18,7 +18,7 @@ config wifi-iface
 	option mode 'ap'
 	option ssid 'OpenFest'
 	option encryption 'none'
-#	option macaddr '<wlan0-macaddr>'
+	option macaddr '<wlan0-macaddr>'
 	option isolate '1'
 	option iapp_interface 'management'
 	option wnm_sleep_mode 1
@@ -44,7 +44,7 @@ config wifi-iface
 	option mode 'ap'
 	option ssid 'OpenFest'
 	option encryption 'none'
-#	option macaddr '<wlan1-macaddr>'
+	option macaddr '<wlan1-macaddr>'
 	option isolate '1'
 	option iapp_interface 'management'
 	option wnm_sleep_mode 1
