@@ -2,7 +2,7 @@
 configurations:
   # Foaier
   ap-cf-f-l:
-    config: archer-c7
+    config: archer-c5
     ip: 10.20.0.50
     wlans:
       0:
