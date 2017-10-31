@@ -7,7 +7,7 @@ configurations:
     wlans:
       0:
         bssid: 02:00:0f:20:10:00
-        channel: 108
+        channel: 106
       1:
         bssid: 02:00:0f:20:10:01
         channel: 13
@@ -21,7 +21,7 @@ configurations:
     wlans:
       0:
         bssid: 02:00:0f:20:10:10
-        channel: 60
+        channel: 58
       1:
         bssid: 02:00:0f:20:10:11
         channel: 5
@@ -36,7 +36,7 @@ configurations:
     wlans:
       0:
         bssid: 02:00:0f:20:20:00
-        channel: 124
+        channel: 122
       1:
         bssid: 02:00:0f:20:20:01
         channel: 5
@@ -50,7 +50,7 @@ configurations:
     wlans:
       0:
         bssid: 02:00:0f:20:20:10
-        channel: 44
+        channel: 42
       1:
         bssid: 02:00:0f:20:20:11
         channel: 1
@@ -64,7 +64,7 @@ configurations:
     wlans:
       0:
         bssid: 02:00:0f:20:20:20
-        channel: 108
+        channel: 106
       1:
         bssid: 02:00:0f:20:20:21
         channel: 9
@@ -78,7 +78,7 @@ configurations:
     wlans:
       0:
         bssid: 02:00:0f:20:20:30
-        channel: 60
+        channel: 58
       1:
         bssid: 02:00:0f:20:20:31
         channel: 13
@@ -93,7 +93,7 @@ configurations:
     wlans:
       0:
         bssid: 02:00:0f:20:30:00
-        channel: 44
+        channel: 42
       1:
         bssid: 02:00:0f:20:30:01
         channel: 1
@@ -107,7 +107,7 @@ configurations:
     wlans:
       0:
         bssid: 02:00:0f:20:30:10
-        channel: 60
+        channel: 58
       1:
         bssid: 02:00:0f:20:30:11
         channel: 1
@@ -122,7 +122,7 @@ configurations:
     wlans:
       0:
         bssid: 02:00:0f:20:40:00
-        channel: 44
+        channel: 42
       1:
         bssid: 02:00:0f:20:40:01
         channel: 1
@@ -136,7 +136,7 @@ configurations:
     wlans:
       0:
         bssid: 02:00:0f:20:40:10
-        channel: 44
+        channel: 42
       1:
         bssid: 02:00:0f:20:40:11
         channel: 1
@@ -151,7 +151,7 @@ configurations:
     wlans:
       0:
         bssid: 02:00:0f:20:50:00
-        channel: 44
+        channel: 42
       1:
         bssid: 02:00:0f:20:50:01
         channel: 9
@@ -165,7 +165,7 @@ configurations:
     wlans:
       0:
         bssid: 02:00:0f:20:50:10
-        channel: 108
+        channel: 106
       1:
         bssid: 02:00:0f:20:50:11
         channel: 1
@@ -180,7 +180,7 @@ configurations:
     wlans:
       0:
         bssid: 02:00:0f:20:50:20
-        channel: 108
+        channel: 106
       1:
         bssid: 02:00:0f:20:50:21
         channel: 13

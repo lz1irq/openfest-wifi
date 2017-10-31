@@ -15,12 +15,28 @@ def wifi(name)
   wlans = CONFIGURATIONS[name]['wlans']
   wlan_config = File.read(config_path)
 
+  # TODO: hack for 11ac channels, make more generic
+  fiveg_channels = {}
+  fiveg_channels['42'] = [36, 40, 44, 48]
+  fiveg_channels['58'] = [52, 56, 60, 64]
+  fiveg_channels['106'] = [100, 104, 108, 112]
+  fiveg_channels['122'] = [116, 120, 124, 128]
+  fiveg_channels['138'] = [132, 136, 140, 144]
+  fiveg_channels['155'] = [149, 153, 157, 161]
+
   wlans.each do |id, wlan|
-    wlan_config.sub!("<radio#{id}-channel>", wlan['channel'].to_s)
     wlan_config.sub!("<wlan#{id}-macaddr>", wlan['bssid'].to_s)
+    # 2.4 GHz
+    if id == 1
+        wlan_config.sub!("<radio#{id}-channel>", wlan['channel'].to_s)
+    # 5 GHz
+    else
+        channels = fiveg_channels[wlan['channel'].to_s]
+        (0..3).each do |chan|
+            wlan_config.sub!("<radio#{id}-channel#{chan}>", channels[chan].to_s)
+        end
+    end
   end
-  #wlan_config.gsub!("#	option channel", "	option channel")
-  wlan_config.gsub!("#	option macaddr", "	option macaddr")
 
   File.open(config_path, 'w') do |f|
     f.puts wlan_config

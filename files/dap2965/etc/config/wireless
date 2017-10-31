@@ -2,7 +2,10 @@ config wifi-device  radio0
 	option type mac80211
 	option hwmode 11a
 	option path 'pci0000:00/0000:00:00.0'
-	option channel <radio0-channel>
+    list channels '<radio0-channel0>'
+    list channels '<radio0-channel1>'
+    list channels '<radio0-channel2>'
+    list channels '<radio0-channel3>'
 	option txpower '30'
 	option htmode VHT80
 	option distance '20'
