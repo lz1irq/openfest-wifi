@@ -73,7 +73,7 @@ configurations:
       - linksys
       - linksys-single-trunk
   ap-cf-mr-4:
-    config: dap2965
+    config: linksys
     ip: 10.20.0.55
     wlans:
       0:
