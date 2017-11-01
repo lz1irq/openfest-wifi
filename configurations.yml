@@ -131,7 +131,7 @@ configurations:
       - archer-c5
       - archer-c5-single-trunk
   ap-cf-qws:
-    config: archer-c5
+    config: archer-c7
     ip: 10.20.0.59
     wlans:
       0:
